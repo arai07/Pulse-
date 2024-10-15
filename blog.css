@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color:white;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #e8faf4;
+  padding: 20px 0;
+}
+
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 20px;
+  color: #00c37a;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+nav a:hover {
+
+  color: #000000;
+  text-decoration: none;
+}
+
+.signup-btn {
+  padding: 10px 20px;
+  border: 2px solid #00c37a;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.signup-btn:hover {
+  box-shadow: 10px 7px;
+  cursor: pointer;
+  transition: all 0.5s;
+  background-color: #e8faf4;                                              
+  font-family: "Roboto", sans-serif;
+}
+
+  .container {
+    display: flex;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  aside {
+    width: 20%;
+    padding-right: 20px;
+  }
+  
+  aside h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  aside ul {
+    list-style: none;
+  }
+  
+  aside ul li {
+    margin-bottom: 10px;
+  }
+  
+  aside ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  aside ul li a:hover {
+    color: #00c37a;
+  }
+  
+  main {
+    width: 80%;
+  }
+  
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 50px;
+    
+  }
+  
+  article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  article h3 {
+    font-size: 14px;
+    color: #777;
+    margin: 10px 0;
+    text-transform: uppercase;
+  }
+  
+  article h2 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  article p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  article a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #00c37a;
+    font-weight: bold;
+  }
+  
+  article a:hover {
+    text-decoration: underline;
+  }
+  .footer {
+    background-color: #0a0a0a;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .footer .columns {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .footer .columns div {
+    text-align: left;
+  }
+  
+  .footer .columns div h4 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer .columns div a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+  footer .columns .btn a{
+     color: #000;
+  }
+  
+  .footer .copyright {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .footer .logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #00D084;
+  }
+  
+  .btn {
+    position: relative;
+      display: inline-block;
+      padding: 1rem 2rem;
+      font-weight: 700;
+      font-size: 18px;
+      font-size: 1.125rem;
+      text-decoration: none;
+      color:white;
+      border-width: 2px;
+      border-color: #fff;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      border-width: 0;
+      background-image: linear-gradient(90deg, #00ab6a, #23ea76);
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    nav {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav a {
+      margin: 10px 0;
+      font-size: 14px;
+    }
+  
+    aside {
+      width: 100%;
+      padding-right: 0;
+    }
+  
+    main {
+      width: 100%;
+    }
+  
+    .post-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    article {
+      margin: 0 auto; 
+      width: 100%;
+    }
+  
+    .footer .columns {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer .columns div {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .btn {
+      padding: 0.75rem 1.5rem;
+      font-size: 16px;
+    }
+  
+    .signup-btn {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  

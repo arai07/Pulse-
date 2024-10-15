@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color:white;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #e8faf4;
+  padding: 20px 0;
+}
+
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 20px;
+  color: #00c37a;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+nav a:hover {
+
+  color: #000000;
+  text-decoration: none;
+}
+
+.signup-btn {
+  padding: 10px 20px;
+  border: 2px solid #00c37a;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.signup-btn:hover {
+  box-shadow: 10px 7px;
+  cursor: pointer;
+  transition: all 0.5s;
+  background-color: #e8faf4;                                              
+  font-family: "Roboto", sans-serif;
+}
+
+
+.pricing-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    
+    text-align: center;
+}
+
+.pricing-container h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.pricing-container p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.plan {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.plan h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.plan .price {
+    font-size: 36px;
+    color: #28A745;
+    margin-bottom: 20px;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.plan ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.plan .signup-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28A745;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+.plan .signup-btn:hover {
+    background-color: #218838;
+}
+
+
+.best-value {
+    background-color: #28A745;
+    border: 2px solid #28A745;
+    color: #fff;
+}
+
+.best-value h2, .best-value .price, .best-value ul li {
+    color: #fff;
+}
+
+.best-value .signup-btn {
+    background-color: #fff;
+    color: #28A745;
+}
+
+.best-value .signup-btn:hover {
+    background-color: #f5f5f5;
+}
+
+
+footer {
+  background-color: #0a0a0a;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer .columns {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer .columns div {
+  text-align: left;
+}
+
+.footer .columns div h4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer .columns div a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+footer .columns .btn a{
+   color: #000;
+}
+
+.footer .copyright {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #777;
+}
+
+.footer .logo {
+  font-size: 36px;
+  font-weight: bold;
+  color: #00D084;
+}
+
+.btn {
+  position: relative;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    font-size: 18px;
+    font-size: 1.125rem;
+    text-decoration: none;
+    color:white;
+    border-width: 2px;
+    border-color: #fff;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    border-width: 0;
+    background-image: linear-gradient(90deg, #00ab6a, #23ea76);
+}
+
+@media (max-width: 480px) {
+  .container, .pricing-plans {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav a, .plan h2, .plan ul li, .footer .columns div h4, .footer .columns div a {
+    font-size: 12px;
+  }
+
+  .plan .price, .best-value .price {
+    font-size: 20px;
+  }
+
+  .signup-btn {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .footer .columns {
+    flex-direction: column;
+  }
+
+  .plan {
+    margin-bottom: 20px;
+  }
+}

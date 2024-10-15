@@ -1,0 +1,658 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color:white;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+header {
+  background-color: #e8faf4;
+  padding: 20px 0;
+}
+
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 20px;
+  color: #00c37a;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+nav a:hover {
+
+  color: #000000;
+  text-decoration: none;
+}
+
+.signup-btn {
+  padding: 10px 20px;
+  border: 2px solid #00c37a;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.signup-btn:hover {
+  box-shadow: 10px 7px;
+  cursor: pointer;
+  transition: all 0.5s;
+  background-color: #e8faf4;                                              
+  font-family: "Roboto", sans-serif;
+}
+main {
+  display: block;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  
+}
+
+.hero {
+  background-color: #e8faf4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1,5rem;
+}
+
+.hero-content {
+  
+  max-width: 600px;
+
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: black;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+
+
+.hero p {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 20px;
+  
+}
+
+.hero strong {
+  color:black;
+  font-weight: bold;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #3ea6f7;
+  color: #fff;
+  padding: 25px 40px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.cta-btn:hover {
+  background-color: #348fd1;
+}
+
+.subtext {
+  font-size: 14px;
+  color: #777;
+}
+
+.subtext a {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.subtext a:hover {
+  text-decoration: underline;
+}
+
+
+.testimonials {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonial h1,p{
+  color: black;
+}
+h1 {
+  font-size: 3rem;
+  color: black;
+  font-weight:bolder;
+  
+}
+p{
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-size: 1.1rem;
+  color:#555;
+font-family:  Helvetica , Helvetica, Arial, sans-serif;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 10px 0;
+  text-align: left;
+margin-top: 4rem;
+
+  
+}
+.testimonials{
+
+  align-items: center;
+  justify-content: center;
+  border: 0 solid;
+
+}
+
+blockquote {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+
+
+.business-decisions {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.testimonial-card {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #4CAF50;
+  margin: 15px 0;
+}
+
+cite {
+  display: block;
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+a {
+  font-size: 0.9rem;
+  color: #4CAF50;
+  text-decoration: none;
+}
+.features-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.features-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.features-section p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.feature-item:hover {
+  transform: scale(1.05);
+}
+
+.feature-item img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.feature-item h3 {
+  font-size: 18px;
+  color: #00D084;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+.cta-link {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #00D084;
+  text-decoration: none;
+}
+
+.cta-link:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+
+.content {
+  flex: 2;
+  margin-right: 20px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  font-size: 2.25rem;
+   line-height: 1.15;
+   margin-bottom: 1.5rem;
+   
+  
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+.testimonial-card {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.profile img {
+  display: inline-block;
+
+  border-radius: 50%;
+  width: 5rem;
+  height: 50px;
+  margin-right: 15px;
+  margin-bottom: 1rem;
+  border-radius: 100%;
+  border-style: solid;
+  max-width: 100%;
+  height:auto;
+  overflow: clip;
+  justify-content: center;
+}
+.profile p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  color: #4CAF50;
+  text-align: center;
+}
+
+
+blockquote {
+  font-size: 1.2rem;
+  color: #4CAF50;
+  margin: 0 0 10px;
+}
+
+cite {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+a {
+  font-size: 0.9rem;
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.hero-section {
+  background-image: url(./img/hero-small-biz.jpg);
+  background-size: cover;
+  background-position:center;
+  text-align: left;
+  height: 100vh;
+  position: relative;
+  color: white;
+
+}
+
+.overlay {
+  background-image: url(https://pulseapp.com/img/hero-small-biz.jpg); 
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: left;
+  text-align: left;
+  height: 100%;
+  padding: 70px;
+  color: white;
+  
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: white;
+  color: #008000;
+  padding: 15px 30px;
+  margin:10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  width: 30%;
+}
+.signup{
+  background-color:#00c37a; 
+
+}
+.signup-btn {
+  background-color: #00ff6b;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #111;
+  cursor: pointer;
+}
+
+
+.signup-section {
+  background-color: #00D084;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.signup-section a {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.stories-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.stories-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.stories-section p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.story-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.story-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.story-card:hover {
+    box-shadow: 10px 7px;
+    cursor: pointer;
+    transition: all 0.5s;
+    background-color: #e8faf4;                                              
+    font-family: "Roboto", sans-serif;
+  }
+
+
+.story-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.story-card h3 {
+  color: #00D084;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.story-card h2 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.story-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.story-card a {
+  color: #00D084;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.story-card a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #0a0a0a;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer .columns {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer .columns div {
+  text-align: left;
+}
+
+.footer .columns div h4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer .columns div a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+footer .columns .btn a{
+   color: #000;
+}
+
+.footer .copyright {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #777;
+}
+
+.footer .logo {
+  font-size: 36px;
+  font-weight: bold;
+  color: #00D084;
+}
+
+.btn {
+  position: relative;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    font-size: 18px;
+    font-size: 1.125rem;
+    text-decoration: none;
+    color:white;
+    border-width: 2px;
+    border-color: #fff;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    border-width: 0;
+    background-image: linear-gradient(90deg, #00ab6a, #23ea76);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-button, .signup-btn {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .cta-btn, .signup-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .features-grid, .story-cards {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .testimonial-card, .story-card {
+    width: 100%;
+  }
+}
